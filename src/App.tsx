@@ -5,7 +5,7 @@ const App = () => {
   const params = new URLSearchParams(window.location.search);
   const msgKey = params.get("msg") || "def";
   const waitMs   = parseInt(params.get("wait") || "3000", 10);
-  const nextUrl  = params.get("next")  || "/";
+  const nextUrl  = params.get("next")  || "/loading-screen/";
 
   const messages: Record<string, string> = {
     api: "Making fetch requests. Please wait...",
